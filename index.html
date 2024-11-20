@@ -3,57 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inspiré du design de pro.aceternity.com">
-    <title>Page Inspirée</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Aceternity Templates</title>
+    <!-- TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <div class="logo">My Brand</div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-50 dark:bg-gray-900">
 
-    <main>
-        <section id="home" class="hero">
-            <h1>Welcome to My Website</h1>
-            <p>Your success starts here</p>
-            <button class="btn">Get Started</button>
-        </section>
+    <main class="py-10">
+        <!-- Section des Templates -->
+        <section class="templates-section max-w-7xl mx-auto px-4">
+            <h1 class="text-2xl font-bold text-black dark:text-white text-center mb-6">Templates Disponibles</h1>
+            <p class="text-center text-gray-500 dark:text-gray-400 mb-10">
+                Découvrez nos templates modernes, minimalistes et interactifs, conçus avec des technologies comme React et TailwindCSS.
+            </p>
 
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>We provide top-notch solutions for your business.</p>
-        </section>
+            <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                <!-- Template 1 -->
+                <a class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center cursor-pointer" href="/products/startup-landing-page-template">
+                    <!-- Texte -->
+                    <div>
+                        <h2 class="text-base font-semibold text-black dark:text-white">
+                            Startup Landing Page Template
+                        </h2>
+                        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                            Une page d'accueil simple, moderne et minimaliste pour startups. Remplie de micro-interactions pour captiver vos utilisateurs.
+                        </p>
+                        <div class="mt-4">
+                            <button class="flex items-center justify-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-semibold text-sm rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition">
+                                <span>Buy now</span>
+                                <span>$49</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="h-full w-full">
+                        <img 
+                            src="https://assets.aceternity.com/templates/startup-1.webp" 
+                            alt="Startup Landing Page Template" 
+                            class="rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                        />
+                    </div>
+                </a>
 
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-card">Service 1</div>
-            <div class="service-card">Service 2</div>
-            <div class="service-card">Service 3</div>
-        </section>
+                <!-- Template 2 -->
+                <a class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center cursor-pointer" href="/products/ai-saas-template">
+                    <!-- Texte -->
+                    <div>
+                        <h2 class="text-base font-semibold text-black dark:text-white">
+                            AI SaaS Template
+                        </h2>
+                        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                            Un template moderne pour les startups SaaS alimentées par l'IA, avec une interface utilisateur intuitive et élégante.
+                        </p>
+                        <div class="mt-4">
+                            <button class="flex items-center justify-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-semibold text-sm rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition">
+                                <span>Buy now</span>
+                                <span>$59</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="h-full w-full">
+                        <img 
+                            src="https://assets.aceternity.com/templates/ai-saas.webp" 
+                            alt="AI SaaS Template" 
+                            class="rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                        />
+                    </div>
+                </a>
 
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
+                <!-- Template 3 -->
+                <a class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center cursor-pointer" href="/products/marketing-template">
+                    <!-- Texte -->
+                    <div>
+                        <h2 class="text-base font-semibold text-black dark:text-white">
+                            Marketing Template
+                        </h2>
+                        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                            Un template parfait pour les agences marketing modernes, avec des animations subtiles pour une expérience utilisateur fluide.
+                        </p>
+                        <div class="mt-4">
+                            <button class="flex items-center justify-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-semibold text-sm rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition">
+                                <span>Buy now</span>
+                                <span>$39</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="h-full w-full">
+                        <img 
+                            src="https://assets.aceternity.com/templates/marketing.webp" 
+                            alt="Marketing Template" 
+                            class="rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                        />
+                    </div>
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 My Brand. All rights reserved.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>

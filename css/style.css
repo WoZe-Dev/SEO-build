@@ -1,106 +1,87 @@
-/* Reset */
-* {
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and Layout */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    padding: 1rem 2rem;
-    color: #fff;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.navbar ul li {
-    margin: 0 1rem;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.navbar ul li a:hover {
-    color: #f39c12;
-}
-
-/* Hero Section */
-.hero {
+.templates-section {
     text-align: center;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 4rem 2rem;
+    padding: 50px 0;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+.section-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.templates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.template-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+}
+
+.template-image {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.template-title {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.template-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 15px 15px;
 }
 
 .btn {
-    background: #f39c12;
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 10px 0;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-    font-size: 1rem;
     border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background: #e67e22;
-}
-
-/* Sections */
-section {
-    padding: 4rem 2rem;
-}
-
-.about, .services, .contact {
-    text-align: center;
-}
-
-.service-card {
-    background: #f4f4f4;
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 5px;
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    background: #222;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #0056b3;
 }
