@@ -1,5 +1,5 @@
-# Mon Projet
+# SEO-build
 
-Voici une capture d'écran de l'application :
+aperçu
 
 ![Aperçu](img/img.png)
