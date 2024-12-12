@@ -83,5 +83,4 @@ function createFooter() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const footerContainer = document.getElementById('main-footer');
-    footerContainer.appendChild(createFooter());
 });
