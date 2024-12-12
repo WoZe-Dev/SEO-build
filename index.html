@@ -3,98 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aceternity Templates</title>
-    <!-- TailwindCSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Template Showcase</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-50 dark:bg-gray-900">
+<body>
+    <nav id="main-nav"></nav>
+    
+    <div class="container">
+        <div id="templates-container"></div>
+    </div>
 
-    <main class="py-10">
-        <!-- Section des Templates -->
-        <section class="templates-section max-w-7xl mx-auto px-4">
-            <h1 class="text-2xl font-bold text-black dark:text-white text-center mb-6">Templates Disponibles</h1>
-            <p class="text-center text-gray-500 dark:text-gray-400 mb-10">
-                Découvrez nos templates modernes, minimalistes et interactifs, conçus avec des technologies comme React et TailwindCSS.
-            </p>
+    <footer id="main-footer"></footer>
 
-            <div id="templates-container" class="space-y-8">
-                <!-- Les templates seront ajoutés ici par JavaScript -->
-            </div>
-        </section>
-    </main>
-
-    <script>
-        // Tableau contenant les informations des templates
-        const templates = [
-            {
-                title: "Startup Landing Page Template",
-                description: "Une page d'accueil simple, moderne et minimaliste pour startups. Remplie de micro-interactions pour captiver vos utilisateurs.",
-                price: "$49",
-                photos: [
-                    "https://assets.aceternity.com/templates/startup-1.webp",
-                    "https://assets.aceternity.com/templates/startup-2.webp",
-                    "https://assets.aceternity.com/templates/startup-3.webp",
-                ],
-                link: "/products/startup-landing-page-template",
-            },
-            {
-                title: "AI SaaS Template",
-                description: "Un template moderne pour les startups SaaS alimentées par l'IA, avec une interface utilisateur intuitive et élégante.",
-                price: "$59",
-                photos: [
-                    "https://assets.aceternity.com/templates/ai-saas-1.webp",
-                    "https://assets.aceternity.com/templates/ai-saas-2.webp",
-                    "https://assets.aceternity.com/templates/ai-saas-3.webp",
-                ],
-                link: "/products/ai-saas-template",
-            },
-            {
-                title: "Marketing Template",
-                description: "Un template parfait pour les agences marketing modernes, avec des animations subtiles pour une expérience utilisateur fluide.",
-                price: "$39",
-                photos: [
-                    "https://assets.aceternity.com/templates/marketing-1.webp",
-                    "https://assets.aceternity.com/templates/marketing-2.webp",
-                    "https://assets.aceternity.com/templates/marketing-3.webp",
-                ],
-                link: "/products/marketing-template",
-            },
-        ];
-
-        // Fonction pour générer le HTML d'un template
-        const generateTemplateHTML = (template) => `
-            <div class="p-6 border rounded-lg bg-white dark:bg-gray-800 shadow-md">
-                <!-- Texte -->
-                <div class="mb-4">
-                    <h2 class="text-lg font-semibold text-black dark:text-white">${template.title}</h2>
-                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">${template.description}</p>
-                    <div class="mt-4">
-                        <button class="flex items-center justify-center gap-2 px-4 py-2 bg-black text-white dark:bg-white dark:text-black font-semibold text-sm rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition">
-                            <span>Buy now</span>
-                            <span>${template.price}</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- Images -->
-                <div class="grid grid-cols-3 gap-4">
-                    ${template.photos.map(photo => `
-                        <img 
-                            src="${photo}" 
-                            alt="${template.title}" 
-                            class="rounded-lg shadow-md transition duration-300 transform hover:scale-105"
-                        />
-                    `).join("")}
-                </div>
-            </div>
-        `;
-
-        // Sélection de l'élément où insérer les templates
-        const templatesContainer = document.getElementById("templates-container");
-
-        // Ajout dynamique des templates dans le DOM
-        templates.forEach(template => {
-            templatesContainer.innerHTML += generateTemplateHTML(template);
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
